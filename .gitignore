@@ -1,0 +1,11 @@
+# 비밀 값 (커밋 금지)
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+
+# 로컬 도구 설정
+.claude/settings.local.json

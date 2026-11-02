@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: pet-planner
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC # timestamptz를 UTC 기준으로 읽고 쓴다
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
